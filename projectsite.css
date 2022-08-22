@@ -164,12 +164,12 @@ footer {
 }
 
 /* --------------- FORMULAIRE PAGE CONTACT -------------- */
-.contactform {
+.contact-form {
     display: flex;
     flex-direction: column;
 }
 
-.contactform h2 {
+.title_contact {
     font-size: 30px;
     font-family: Sourcecodepro_m;
     margin-left: 33px;
