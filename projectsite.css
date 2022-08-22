@@ -1,0 +1,374 @@
+/* Mise a diposition des polices pour le téléchargement */
+/* --------------- NORWESTER --------------- */
+@font-face {
+    font-family: 'Norwester';
+    src: url('fonts/norwester/norwester.otf') format('opentype');
+}
+/* --------------- CHUNKFIVE --------------- */
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('fonts/chunkfive/ChunkFive-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Chunkfive_p';
+    src: url('fonts/chunkfive/Chunk\ Five\ Print.otf') format('opentype');
+}
+/* --------------- SOURCECODEPRO --------------- */
+@font-face {
+    font-family:'Sourcecodepro_l';
+    src: url('fonts/source-code-pro/SourceCodePro-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sourcecodepro_l_it';
+    src: url('fonts/source-code-pro/SourceCodePro-LightIt.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sourcecodepro_m';
+    src: url('fonts/source-code-pro/SourceCodePro-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sourcecodepro_r';
+    src: url('fonts/source-code-pro/SourceCodePro-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sourcecodepro_sb';
+    src: url('fonts/source-code-pro/SourceCodePro-Semibold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sourcecodepro_sb_it';
+    src: url('fonts/source-code-pro/SourceCodePro-SemiboldIt.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sourcecodepro_b_it';
+    src: url('fonts/source-code-pro/SourceCodePro-BoldIt.otf') format('opentype');
+}
+
+/* ---------------- DEGRADE -------------- */   
+body {
+    overflow-x: hidden;
+    background: linear-gradient(30deg, #ffffff, bisque);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* ------ TITRE PRINCIPAL -- TOPBAR ------ */
+.topbar {
+    width: auto;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    text-align: center;
+    margin: auto;
+}
+.topbar h1 {
+    color: white;
+    font-family: Sourcecodepro_sb;
+    font-size: 50px;
+}
+
+/* ------ BARRE DE NAVIGATION ------ */
+/* Barre sans les éléments */
+.topnav {
+    overflow: hidden;
+    width: auto;
+    height: fit-content;
+    background-color: bisque;
+}
+/* Elements "a" dans la barre */
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font: white 17px;
+    color: black;
+    font-family: Sourcecodepro_l;
+    text-decoration: none;
+    transition: 170ms all ease-out;
+}
+/* Changement lors du survol de "a" */
+.topnav a:hover {
+    transition: 200ms all ease-out;
+    font: 20px Sourcecodepro_l_it;
+    background-color: black;
+    color: white;
+}
+
+/* Lorsque 'a' est actif */
+.topnav a.active {
+    font-family: Sourcecodepro_r;
+    font-size: large;
+    background-color: black;
+    color: white;
+}
+
+/* --------------- BOTTOM BAR - COPYRIGHT ------------- */
+footer {
+    margin-top: 30px;
+}
+.bottombar {
+    text-align: center;
+    padding: 20px 20px;
+    font-family: Sourcecodepro_l_it;
+    background-color: blanchedalmond;
+    border: 4px bisque outset;
+    width: 100%;  
+    display: block;
+    /* fixer la barre en bas */
+    position: static;
+    bottom: 0;
+    left: 0;
+}
+
+/* Conteneur de paragraphe MAIN PAGE -- HOME */
+.textcontainer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: Sourcecodepro_l;
+    flex-wrap: wrap;
+}
+
+.textcontainer h3 {
+    padding: 10px 10px;
+    border: 3px solid black;
+    width: 450px;
+}
+
+/* paragraphes */
+.textcontainer p {
+    border: groove black;
+    border-radius: 10px 10px 10px;
+    padding: 10px 10px;
+    width: min-content;
+    font-size: large;
+    font-family: Sourcecodepro_l;
+}
+
+/* --------------- FORMULAIRE PAGE CONTACT -------------- */
+.contactform {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    font-family: Sourcecodepro_m;
+    margin-left: 33px;
+}
+
+/* Formulaire */
+form {
+    margin-left: 50px;
+    font-family: Sourcecodepro_l;
+}
+/* police des texte de description des box */
+label {
+    font-family: Sourcecodepro_l_it;
+    font-size: medium;
+}
+
+/* ------ TEXT AREA ------ */
+@keyframes blinkbox {
+    from {border: 4px outset rgb(252, 218, 177);}
+    to {border: 4px inset rgb(252, 218, 177);}
+}
+/* box - titre du message */
+#textbox_t {
+    width: 225px;
+    height: 25px;
+    font-size: 15px;
+    border: 4px solid rgb(252, 218, 177);
+    border-radius: 5px 5px 5px;
+    outline: none;
+}
+#textbox_t:hover {
+    transition: all 100ms;
+    animation: blinkbox 1s alternate-reverse infinite;
+}
+
+/* box - contenu du message */
+
+
+#textbox_m {
+    border: 4px solid rgb(252, 218, 177);
+    border-radius: 10px 10px 10px;
+    outline: none;
+}
+#textbox_m:hover {
+    transition: all 100ms;
+    animation: blinkbox 1s alternate-reverse infinite;
+}
+
+/* Privacy checkbox */
+#checkbox1 {
+    margin-top: 7px;
+}
+
+/* Privacy politics */
+#privacy {
+    text-decoration: none;
+    color: red;
+    transition: 70ms;
+}
+#privacy:hover {
+    font-size: 15px;
+    transition: 70ms;
+    animation: blinkpriv 500ms alternate-reverse infinite ease-in-out;
+}
+
+@keyframes blinkpriv {
+    from {
+        text-shadow: red 0 0 1px;
+    }
+    to {
+        text-shadow: red 0 0 10px;
+    }
+}
+
+#privacy:active {
+    color: black;
+}
+
+#send1 {
+    text-align: left;
+    display: block;
+}
+
+/*#send button */
+#send {
+    margin-top: 10px;
+    position: fixed;
+    transition: all 200ms;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 209, 152);
+    font-family: Sourcecodepro_l;
+    border-radius: 5px 5px 5px;
+    display: block;
+}
+#send:hover {
+    transition: all 200ms;
+    width: 110px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 8px 8px 8px;
+}
+#send:active {
+    transition: 150ms all;
+    color: black;
+    background: white;
+}
+
+/* --------------- SETUP PAGE ---------------- */
+/* all peripherals */
+.setup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.setup h2 {
+    text-align: center;
+    font-family: Sourcecodepro_sb;
+    padding: 10px 15px;
+    min-width: none;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(51, 177, 118);
+    color: white;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+/* articles des setup  */
+.setup article {
+    margin-right: 10px;
+    justify-content: left;
+    width: 500px;
+    border: 2px black solid;
+    flex: 1;
+}
+
+/* titres des différentes périph du setup */
+.setup h3 {
+    font-family: Sourcecodepro_r;
+    font-weight: 550;
+    font-size: large;
+    text-align: center;
+    margin: 30px 30px 30px;
+    padding: 10px 15px;
+    width: 400px;
+    height: 30px;
+    background-color: rgb(141, 37, 37);
+    color: white;
+}
+
+/* contenu du main pc, liste */
+.setup li {
+    font-family: Sourcecodepro_l;
+    list-style: none;
+}
+
+.setup strong {
+    font-family: Sourcecodepro_sb;
+    font-weight: 500;
+}
+
+
+#accessoires {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Accessoires du main pc + laptop */
+#accessoires h2 {
+    text-align: center;
+    font-family: Sourcecodepro_sb;
+    padding: 10px 15px;
+    width: 100%;
+    min-width: none;
+    height: 40px;
+    background-color: rgb(51, 177, 118);
+    color: white;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+#accessoires article {
+    margin-right: 10px;
+    justify-content: left;
+    width: 500px;
+    border: 2px black solid;
+    flex: 1;
+}
+ 
+#accessoires h3 {
+    font-family: Sourcecodepro_r;
+    font-weight: 550;
+    font-size: large;
+    text-align: center;
+    margin: 30px 30px 30px;
+    padding: 10px 15px;
+    width: 400px;
+    height: 30px;
+    background-color: rgb(141, 37, 37);
+    color: white;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="projectsite.css">
+        <title>Yassine's site</title>
+    </head>
+    <body>
+
+        <script>
+            function politique() {
+                alert("La politique de confidentialité signifie que votre message peut être utilisé et transmis à des fins commerciales de manière anonyme.")
+            };
+        </script>
+
+        <header>
+            <div class="topbar">
+                <h1 class="titre">Project Site</h1>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav">
+                <a href="ProjectSite_home.html">Home</a>
+                <a href="ProjectSite_setup.html">Setup</a>
+                <a href="ProjectSite_aboutme.html">About</a>
+                <a class="active" href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="contactform">
+            <h2>Contact</h2>
+            <form action="submit" id="contact">
+                <label for="title_m" style="font-size: 17px;">Titre du message : </label> <br />
+                <input type="text" id="textbox_t" name="title_m" style="margin-top: 5px;" placeholder="Entrez le titre du message ici"><br /><br>
+
+                <label class="label_m" for="message" style="font-size: 17px;">Message : </label><br />
+                <textarea rows="5" cols="50" id="textbox_m" name="message" style="font-size: 15px; margin-top: 5px;" placeholder="Entrez le contenu de votre message ici"></textarea><br />
+                
+                <input type="checkbox" id="checkbox1" name="checkboxx">
+                <label for="checkboxx" style="font-size: small;">
+                J'accepte que le contenu de ce message soit traité conformément à la 
+                <a id="privacy" onclick="politique()">Politique de Confidentialité</a>.
+                </label>
+                <div id="send1">
+                    <input id="send" type="button" value="Envoyer">
+                </div>
+
+            </form>
+            
+        </div>
+
+        <footer>
+            <div class="bottombar">
+                <p class="copyright">Ce site est la propriété formelle de Yassine Chouiti, toute modification est interdite.</p>
+            </div>
+        </footer>
+    </body>
+</html>
